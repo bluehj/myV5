@@ -25,4 +25,14 @@ myV5
 3.创建表
 
   create table news(id int primary key auto_increment,title char(100),content text)charset utf8;
+## >2013-12-17 第2课 ##
+1.把表创建出来
+
+2.创建应用
+
+3.配置好数据库连接
+
+4.执行一次find()
+
+5.输出结果
 
