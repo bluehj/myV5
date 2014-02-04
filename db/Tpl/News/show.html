@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>文章列表页</title>
+</head>
+<body>
+	<a href="__CONTROL__/add">发表文章</a>
+	<table border="1" width="100%">
+		<caption>
+   		    <th>ID</th>
+   		    <th>标题</th>
+		</caption>
+	    <list from="$news" name="n">
+	    	<tr>
+ 				<td align="center">{$n.id}</td>
+ 				<td align="center">{$n.title}</td>
+	    	</tr>
+	    </list>
+	</table>
+	{$page}
+</body>
+</html>
