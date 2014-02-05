@@ -1,0 +1,31 @@
+$(function(){
+	$('form').validate({
+	    username:{
+	    	rule:{
+	    		required:true
+	    	},
+	    	error:{
+	    		required:'用户名不能为空'
+	    	}
+	    },
+	    password:{
+	    	rule:{
+	    		required:true
+	    	},
+	    	error:{
+	    		required:'密码不能为空'
+	    	}
+	    },
+	    code:{
+	    	rule:{
+	    		required:true,
+	    		//使用ajax异步验证验证码正确性
+	    		ajax:CONTROL+'&m=checkCode'
+	    	},
+	    	error:{
+	    		required:'验证码不能为空',
+	    		ajax:'验证码输入错误'
+	    	}
+	    }
+	})
+})
